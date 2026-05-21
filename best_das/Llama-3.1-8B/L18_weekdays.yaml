@@ -1,0 +1,29 @@
+layer: 18
+model_name: Llama-3.1-8B
+runs_dir: ../outputs/das/Llama-3.1-8B/weekdays/
+subspaces:
+  input:
+    is_sublayer: true
+    layer: 18
+    run_id: 20260310_224657_input_subspace_8d_sublayer_db61db
+    subspace_dim: 8
+    subspace_iia: 0.9865853658536585
+  offset:
+    is_sublayer: true
+    layer: 18
+    run_id: 20260310_224536_number_subspace_8d_sublayer_157681
+    subspace_dim: 8
+    subspace_iia: 0.9853658536585366
+  output:
+    is_sublayer: false
+    layer: 18
+    run_id: 20260310_204746_output_subspace_8d_09dbf3
+    subspace_dim: 8
+    subspace_iia: 0.9829268292682927
+  output_pre:
+    is_sublayer: true
+    layer: 18
+    run_id: 20260310_224609_output_subspace_8d_sublayer_18e3af
+    subspace_dim: 8
+    subspace_iia: 0.9329268292682927
+task: weekdays

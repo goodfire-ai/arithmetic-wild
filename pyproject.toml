@@ -1,0 +1,19 @@
+[project]
+name = "arithmetic-wild"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "causalab",
+    "torch",
+]
+
+[tool.uv.sources]
+causalab = { git = "https://github.com/goodfire-ai/causalab", rev = "264dfb3" }
+torch = [{ index = "pytorch-cu128" }]
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true

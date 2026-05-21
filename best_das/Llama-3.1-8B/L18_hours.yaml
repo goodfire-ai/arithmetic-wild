@@ -1,0 +1,29 @@
+layer: 18
+model_name: Llama-3.1-8B
+runs_dir: ../outputs/das/Llama-3.1-8B/hours/
+subspaces:
+  input:
+    is_sublayer: true
+    layer: 18
+    run_id: 20260311_192337_input_subspace_16d_sublayer_8b8dc5
+    subspace_dim: 16
+    subspace_iia: 0.9378048780487804
+  offset:
+    is_sublayer: true
+    layer: 18
+    run_id: 20260311_192056_number_subspace_14d_sublayer_8e6dc3
+    subspace_dim: 14
+    subspace_iia: 0.9560975609756097
+  output:
+    is_sublayer: false
+    layer: 18
+    run_id: 20260311_172105_output_subspace_16d_4cac51
+    subspace_dim: 16
+    subspace_iia: 0.9426829268292682
+  output_pre:
+    is_sublayer: true
+    layer: 18
+    run_id: 20260311_192724_output_subspace_16d_sublayer_aee249
+    subspace_dim: 16
+    subspace_iia: 0.8536585365853658
+task: hours

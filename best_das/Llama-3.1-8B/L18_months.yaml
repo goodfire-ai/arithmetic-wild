@@ -1,0 +1,29 @@
+layer: 18
+model_name: Llama-3.1-8B
+runs_dir: ../outputs/das/Llama-3.1-8B/months/
+subspaces:
+  input:
+    is_sublayer: true
+    layer: 18
+    run_id: 20260310_234517_input_subspace_8d_sublayer_476af5
+    subspace_dim: 8
+    subspace_iia: 0.9341463414634147
+  offset:
+    is_sublayer: true
+    layer: 18
+    run_id: 20260310_234450_number_subspace_8d_sublayer_6fba70
+    subspace_dim: 8
+    subspace_iia: 0.975609756097561
+  output:
+    is_sublayer: false
+    layer: 18
+    run_id: 20260310_215952_output_subspace_8d_9ab338
+    subspace_dim: 8
+    subspace_iia: 0.8524390243902439
+  output_pre:
+    is_sublayer: true
+    layer: 18
+    run_id: 20260310_235419_output_subspace_8d_sublayer_e72683
+    subspace_dim: 8
+    subspace_iia: 0.7914634146341464
+task: months

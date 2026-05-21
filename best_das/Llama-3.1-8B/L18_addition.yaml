@@ -1,0 +1,29 @@
+layer: 18
+model_name: Llama-3.1-8B
+runs_dir: ../outputs/das/Llama-3.1-8B/addition/
+subspaces:
+  input:
+    is_sublayer: true
+    layer: 18
+    run_id: 20260311_184145_input_subspace_16d_sublayer_b108ce
+    subspace_dim: 16
+    subspace_iia: 0.6170731707317073
+  offset:
+    is_sublayer: true
+    layer: 18
+    run_id: 20260311_184021_number_subspace_15d_sublayer_99f227
+    subspace_dim: 15
+    subspace_iia: 0.6378048780487805
+  output:
+    is_sublayer: false
+    layer: 18
+    run_id: 20260311_163759_output_subspace_16d_d018e5
+    subspace_dim: 16
+    subspace_iia: 0.9658536585365853
+  output_pre:
+    is_sublayer: true
+    layer: 18
+    run_id: 20260311_184215_output_subspace_16d_sublayer_81b1b7
+    subspace_dim: 16
+    subspace_iia: 0.875609756097561
+task: addition

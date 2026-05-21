@@ -1,0 +1,12 @@
+{
+  "model": "meta-llama/Llama-3.1-8B",
+  "original_size": 10000,
+  "filtered_size": 4096,
+  "filter_accuracy": 0.4096,
+  "batch_size": 32,
+  "max_new_tokens": 5,
+  "validate_counterfactuals": true,
+  "dtype": "bfloat16",
+  "filtering_time_seconds": 131.12262845039368,
+  "no_mtws": false
+}
