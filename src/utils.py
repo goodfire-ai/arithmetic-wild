@@ -107,3 +107,22 @@ def load_subspace_old(run_id, task_folder, subspace_layer, token_position="last_
     subspace = featurizer.featurizer.rotate.weight.detach().cuda()  # (model_dim, subspace_dim)
     print(f"  Subspace shape: {subspace.shape}")
     return subspace 
+
+def load_task_info(task_name: str):
+    """Lazily load task config to avoid importing all tasks upfront. For rephrased_templates.ipynb"""
+    if task_name == "weekdays":
+        from tasks.weekdays.causal_models import DAYS, OFFSETS, TEMPLATE
+        cfg = (DAYS, OFFSETS, TEMPLATE)
+    elif task_name == "months":
+        from tasks.months.causal_models import MONTHS, OFFSETS, TEMPLATE
+        cfg = (MONTHS, OFFSETS, TEMPLATE)
+    elif task_name == "hours":
+        from tasks.hours.causal_models import HOURS, OFFSETS, TEMPLATE
+        cfg = (HOURS, OFFSETS, TEMPLATE)
+    elif task_name == "addition":
+        from tasks.addition.causal_models import NUMBERS, TEMPLATE
+        cfg = (NUMBERS, NUMBERS, TEMPLATE)
+    else:
+        raise ValueError(f"Unknown task: {task_name}")
+
+    return cfg

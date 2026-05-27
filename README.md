@@ -25,10 +25,13 @@ All under `src/fourier_probes/`.
 
 ### Section 5: Neurons 
 - `neuron_selection.py` finds addition neurons by looking at their overlap with DAS subspaces. 
+- `neuron_selection_sweep.ipynb` shows results over a sweep of thresholds for the addition task.
+- `rephrased_templates.ipynb` shows ablations for addition neurons across multiple tasks/templates.
 - `neurons_across_sums.ipynb` gives code for reproducing Figure 8 (neuron activations across output sums).
 - `neurons_across_prompts.ipynb` gives plotting code to get gate, up, and full activation visualizations for different tasks.
 - `static_downproj.ipynb` shows down projection vectors on Fourier planes. 
 - `dynamic_downproj.ipynb` shows down projections scaled by their activations for an actual forward pass on Fourier planes. 
+
 
 ## Setup
 
